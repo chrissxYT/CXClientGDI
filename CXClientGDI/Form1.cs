@@ -91,16 +91,16 @@ namespace CXClientGDI
                         {
                             g.DrawString(mod.Key, Font, Brushes.White, pea.ClipRectangle.X + 10, pea.ClipRectangle.Y + y);
                             y += fnt_size;
-                            File.AppendAllText("log", DateTime.Now.ToString() + $" Drew {mod.Key}\r\n");
+                            File.AppendAllText("log", DateTime.Now.ToString() + $" Drew {mod.Key}\n");
                         }
                     }
-                    File.AppendAllText("log", DateTime.Now.ToString() + " Drew screen\r\n");
+                    File.AppendAllText("log", DateTime.Now.ToString() + " Drew screen\n");
                 }
                 catch (Exception e)
                 {
                     try
                     {
-                        File.AppendAllText("log", DateTime.Now.ToString() + " " + e.ToString() + "\r\n");
+                        File.AppendAllText("log", DateTime.Now.ToString() + " " + e.ToString() + "\n");
                     }
                     catch (Exception e1)
                     {
